@@ -2,7 +2,8 @@ function volume_sphere() {
 	
     const form = document.getElementById('MyForm');
 	let r = Number(form.radius.value);
-	form.volume.value = (4*Math.PI*(r**3))/ 3;
+	let vol = (4*Math.PI*(r**3))/ 3;
+	form.volume.value = vol.toFixed(4);
 	return false;
 } 
 
